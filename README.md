@@ -1,3 +1,25 @@
+# Introduction
+This project is updated from [dagf2101/pytorch-sepconv](https://github.com/dagf2101/pytorch-sepconv)    
+
+updates:
+
+1. some code robustness     
+2. now the output video has audio     
+3. increase a progress bar when processing     
+
+**Chinese introduction and practice lesson video:** pass
+
+
+## Warning!!!
+ The code is old and has bugs,that it needs a high calculation capability GPU（`K80` is not enough）to run successfully. Also it is not friendly to Windows users.     
+
+
+ So u should refer to the origin author [sniklaus/pytorch-sepconv](https://github.com/sniklaus/pytorch-sepconv) to get newest code which used cupy to compile automatically. But it can only handle photos.
+
+> Below is the origin 'readme'    
+
+------------------------------
+
 # pytorch-sepconv
 This is a reference implementation of Video Frame Interpolation via Adaptive Separable Convolution [1] using PyTorch. Given two frames, it will make use of <a href="http://graphics.cs.pdx.edu/project/adaconv">adaptive convolution</a> [2] in a separable manner to interpolate the intermediate frame. Should you be making use of our work, please cite our paper [1].
 
