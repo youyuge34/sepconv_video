@@ -1,1 +1,4 @@
 /.project
+
+.pytorch
+.o
