@@ -241,6 +241,7 @@ if arguments_strVideo and arguments_strVideoOut:
 
 	if not os.path.exists(arguments_strVideo):
 		print('{} is not exits! Plz check~'.format(arguments_strVideo))
+		break
 
 	# Process video
 	reader = FFMPEG_VideoReader(arguments_strVideo, False)
@@ -252,7 +253,7 @@ if arguments_strVideo and arguments_strVideoOut:
 	num = reader.nframes  # number of frames
 	for x in range(0, num):
 		# progress bar
-		if x % 100 == 0:
+		if x % (reader.fps * 10) == 0:
 			sys.stdout.write(' ' * 10 + '\r')
 			sys.stdout.flush()
 			sys.stdout.write('{:.1f}%'.format(x * 100 / num) + '\r')
