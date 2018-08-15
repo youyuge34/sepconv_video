@@ -7,7 +7,7 @@ updates:
 2. now the output video has audio     
 3. increase a progress bar when processing     
 
-**Chinese introduction and practice lesson video:** pass
+**Chinese introduction and practice lesson video:** [【中文】 基于SepConv深度学习的视频补帧 插帧 论文+代码+实战教程](https://www.bilibili.com/video/av29090385/)
 
 
 ## Warning!!!
